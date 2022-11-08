@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font library -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Google font Link end here -->
+
+    <!-- Font Awesome library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Digital Marketing</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        #navbar {
+            height: 60px;
+            background-color: black;
+
+        }
+
+        #navbar .Gnavbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            padding: 0 40px;
+            overflow: hidden;
+        }
+
+        #navbar .Gnavbar .logo h1 {
+            font-size: 31px;
+            color: #fff;
+            font-weight: 800;
+        }
+
+        #navbar .Gnavbar .logo h1 span {
+            color: #fdac53;
+        }
+
+        #navbar .Gnavbar .nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        #navbar .Gnavbar .nav ul li {
+            list-style-type: none;
+            margin: 0 10px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        #banner {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.749), rgba(0, 0, 0, 0.553)), url(./image/bo.jpg);
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #banner .info {
+            height: 100%;
+            width: 600px;
+            padding: 35px 0;
+            color: #fff;
+        }
+
+        #banner .info h3 {
+            font-size: 15px;
+            font-weight: 400;
+
+        }
+
+        #banner .info h1 {
+            font-size: 50px;
+            font-weight: 700;
+            padding: 15px 0;
+        }
+
+        #banner .info .btn button {
+            font-size: 12px;
+            color: black;
+            transition: 0.3s ease-in-out;
+            background-color: #fdac53;
+            padding: 5px 15px;
+        }
+
+        #banner .info .btn button:hover {
+            background-color: #f88b16;
+        }
+
+        #about {
+            height: 100%;
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        #about .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #about .parent .image {
+            height: 250px;
+            width: 250px;
+
+            margin: 20px;
+        }
+
+        #about .parent .image img {
+            height: 250px;
+            width: 250px;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        #about .parent .detail {
+            height: auto;
+            width: 380px;
+
+        }
+
+        #about .parent .detail span {
+            font-size: 10px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #fdac53;
+            padding: 0 10px
+        }
+
+        #about .parent .detail h1 {
+            font-size: 25px;
+            font-weight: 800;
+            padding: 5px;
+        }
+
+        #about .parent .detail p {
+            font-size: 11px;
+            font-weight: 300;
+            padding: 5px;
+        }
+
+        #about .parent .detail .btn button {
+            font-size: 10px;
+            padding: 5px 15px;
+            margin: 10px 0;
+            transition: 0.3s ease-in-out;
+            background-color: #fdac53;
+            border: transparent;
+        }
+
+        #about .parent .detail .btn button:hover {
+            background-color: #f88b16;
+        }
+
+        #contect {
+            height: 100%;
+            width: 100%;
+        }
+
+        #contect .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #contect .parent .details {
+            height: 90px;
+            width: 250px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            border: 1px dashed black;
+        }
+
+        #contect .parent .details i {
+            font-size: 25px;
+            padding: 15px;
+            margin: 15px 0;
+            color: #fdac53;
+        }
+
+        #contect .parent .details h2 {
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        #contect .parent .details p {
+            font-size: 13px;
+            font-weight: 300;
+            padding: 5px 0;
+        }
+
+
+
+        #content {
+            height: 100%;
+            width: 100%;
+        }
+
+        #content .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #content .parent .card {
+            height: auto;
+            width: 260px;
+            margin: 10px;
+        }
+
+
+        #content .parent .main {
+            height: auto;
+            width: 557px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+
+        #content .parent .card span {
+            font-size: 10px;
+            font-weight: 300;
+            color: #fff;
+            background-color: #fdac53;
+        }
+
+        #content .parent .card h1 {
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        #content .parent .card p {
+            font-size: 18px;
+            font-weight: 300;
+
+        }
+
+        #content .parent .card .btn button {
+            font-size: 15px;
+            padding: 5px 15px;
+            margin: 15px 0;
+            background-color: #fdac53;
+            border: transparent;
+        }
+
+        #content .parent .card .btn button:hover {
+            background-color: #f88b16;
+        }
+
+
+        #content .parent .main .box {
+            height: auto;
+            width: 250px;
+            margin: 10px;
+            display: flex;
+        }
+
+        #content .parent .main .box i {
+            font-size: 28px;
+            padding: 15px;
+            text-align: ;
+            margin: 15px 0;
+            color: #fdac53;
+        }
+
+        #content .parent .main .box h1 {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 15px 0;
+        }
+
+        #content .parent .main .box p {
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        #content .parent .main .box h5 {
+            font-weight: 400;
+            padding: 15px 0;
+            color: #fdac53;
+        }
+
+        #content .parent .main .box h5:hover {
+            color: #f88b16;
+            text-decoration: underline;
+        }
+
+        #expereince {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        #expereince .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #expereince .parent .card {
+            height: auto;
+            width: 350px;
+            margin: 10px;
+
+        }
+
+
+        #expereince .parent .main {
+            height: auto;
+            width: 557px;
+            display: flex;
+
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #expereince .parent .card span {
+            font-size: 10px;
+            font-weight: 300;
+            color: #fff;
+            background-color: #fdac53;
+        }
+
+        #expereince .parent .card h1 {
+            font-size: 27px;
+            font-weight: 900;
+            padding: 10px 0;
+        }
+
+        #expereince .parent .card p {
+            font-size: 18px;
+            font-weight: 200;
+            padding: 0 0 10px 0;
+        }
+
+        #expereince .parent .card li {
+            font-size: 14px;
+        }
+
+        #expereince .parent .card .btn button {
+            font-size: 15px;
+            padding: 5px 15px;
+            margin: 15px 0;
+            background-color: #fdac53;
+            border: transparent;
+        }
+
+        #expereince .parent .card .btn button:hover {
+            background-color: #f88b16;
+        }
+
+
+        #expereince .parent .main .box {
+            height: 130px;
+            width: 250px;
+            margin: 10px;
+
+        }
+
+        #expereince .parent .main .box h1 {
+            font-size: 55px;
+            text-align: center;
+            color: #fdac53;
+        }
+
+        #expereince .parent .main .box h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #employ {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        #employ .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #employ .parent .card {
+            height: auto;
+            width: 250px;
+            margin: 10px;
+
+        }
+
+
+        #employ .parent .main {
+            height: auto;
+            width: 557px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+
+        #employ .parent .card span {
+            font-size: 10px;
+            font-weight: 500;
+            color: #fff;
+            background-color: #fdac53;
+        }
+
+        #employ .parent .card h1 {
+            font-size: 32px;
+            font-weight: 800;
+        }
+
+        #employ .parent .card p {
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        #employ .parent .card .btn button {
+            font-size: 15px;
+            padding: 5px 15px;
+            margin: 10px 0;
+            background-color: #fdac53;
+            border: transparent;
+        }
+
+        #employ .parent .card .btn button:hover {
+            background-color: #f88b16;
+        }
+
+
+        #employ .parent .main .box {
+            height: 250px;
+            width: 150px;
+            margin: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.295);
+        }
+
+        #employ .parent .main .box img {
+            height: 180px;
+            width: 150px;
+            object-fit: cover;
+            background-size: cover;
+        }
+
+
+        #employ .parent .main .box h3 {
+            font-size: 15px;
+            font-weight: 600;
+            padding: 10px 0 0 0;
+            text-align: center;
+        }
+
+        #employ .parent .main .box p {
+            font-size: 13px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        #subscription {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        #subscription .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #subscription .parent .price {
+            height: auto;
+            width: 600px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px;
+        }
+
+        #subscription .parent .price .amount {
+            height: auto;
+            width: 250px;
+
+            margin: 10px;
+            border: 1px solid gray;
+        }
+
+        #subscription .parent .price .amount h2 {
+            text-align: center;
+            font-weight: 600;
+            padding: 15px 0;
+        }
+
+        #subscription .parent .price .amount h1 {
+            text-align: center;
+            font-size: 38px;
+            font-weight: 800;
+            padding: 0 0 20px 0;
+        }
+
+        #subscription .parent .price .amount p {
+            padding: 10px 0;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        #subscription .parent .price .amount .btn button {
+            font-size: 15px;
+            padding: 5px 16px;
+            margin: 5px 0;
+            background-color: #fdac53;
+            color: black;
+            transition: 0.3s ease-in-out;
+            border: transparent;
+        }
+
+        #subscription .parent .price .amount .btn button:hover {
+            background-color: #f88b16;
+        }
+
+
+        #subscription .parent .package {
+            height: auto;
+            width: 350px;
+            margin: 10px;
+
+        }
+
+        #subscription .parent .package span {
+            font-size: 10px;
+            font-weight: 500;
+            color: #fff;
+            background-color: #fdac53;
+        }
+
+        #subscription .parent .package h1 {
+            font-size: 35px;
+            font-weight: 700;
+        }
+
+        #subscription .parent .package p {
+            font-size: 18px;
+            font-weight: 200;
+            padding: 10px 0;
+        }
+
+        #subscription .parent .package .btn button {
+            font-size: 15px;
+            padding: 5px 15px;
+            margin: 15px 0;
+            background-color: #fdac53;
+            border: transparent;
+        }
+
+        #subscription .parent .package .btn button:hover {
+            background-color: #f88b16;
+        }
+
+        #clint {
+            height: 100%;
+            width: 100%;
+        }
+
+        #clint .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #clint .parent .about {
+            height: auto;
+            width: 250px;
+            margin: 10px;
+        }
+
+        #clint .parent .about span {
+            font-size: 10px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #fdac53;
+        }
+
+        #clint .parent .about h1 {
+            font-size: 30px;
+            font-weight: 800;
+            padding: 5px;
+        }
+
+        #clint .parent .about p {
+            font-size: 18px;
+            font-weight: 200;
+            padding: 5px;
+        }
+
+        #clint .parent .about .btn button {
+            font-size: 13px;
+            padding: 5px 15px;
+            margin: 10px 0;
+            transition: 0.3s ease-in-out;
+            background-color: #fdac53;
+            border: transparent;
+        }
+
+        #clint .parent .about .btn button:hover {
+            background-color: #f88b16;
+        }
+
+        #clint .parent .comment {
+            height: auto;
+            width: 250px;
+            margin: 10px;
+        }
+
+        #clint .parent .comment .info {
+            border: 1px solid rgba(0, 0, 0, 0.098);
+        }
+
+        #clint .parent .comment .info p {
+            font-size: 15px;
+            font-weight: 200;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #clint .parent .comment .detail {
+            display: flex;
+            align-items: center;
+        }
+
+        #clint .parent .comment .detail img {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-size: cover;
+            margin: 15px 0;
+        }
+
+        #clint .parent .comment .detail .jo {
+            text-align: left;
+            margin: 0 0 0 20px;
+        }
+
+        #clint .parent .comment .detail .jo h4 {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        #clint .parent .comment .detail .jo i {
+            font-size: 13px;
+            font-weight: 300;
+
+        }
+
+        #blog {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        #blog h3 {
+            text-align: center;
+            padding: 20px 0 0 0;
+        }
+
+        #blog span {
+            font-size: 12px;
+            background-color: #fdac53;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        #blog h1 {
+            font-size: 30px;
+            text-align: center;
+            font-weight: 700;
+            padding: 0 0 20px 0;
+
+        }
+
+        #blog .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #blog .parent .video {
+            height: auto;
+            width: 380px;
+            border: 1px solid rgba(0, 0, 0, 0.144);
+
+            margin: 15px;
+        }
+
+        #blog .parent .video img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+            background-size: cover;
+        }
+
+        #blog .parent .video .info {
+            display: flex;
+            align-items: center;
+            padding: 10px 0 0 0;
+        }
+
+        #blog .parent .video .info img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            margin: 0 15px;
+        }
+
+        #blog .parent .video .info h5 {
+            text-align: left;
+            font-weight: 300;
+            padding: 0 10px;
+        }
+
+        #blog .parent .video .info h5:hover {
+            text-decoration: underline;
+        }
+
+        #blog .parent .video .info i {
+            color: #fdac53;
+            padding: 0 0 0 10px;
+        }
+
+        #blog .parent .video .info h6 {
+            text-align: left;
+            font-weight: 300;
+            font-size: 13px;
+        }
+
+        #blog .parent .video .info h6:hover {
+            text-decoration: underline;
+        }
+
+        #blog .parent .video h2 {
+            font-size: 16px;
+            padding: 10px;
+            font-weight: 500;
+        }
+
+        #blog .parent .video h2:hover {
+            text-decoration: underline;
+            color: #fdac53;
+        }
+
+        #footer {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+
+        #footer .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        @media screen and (max-width:768px) {
+
+            #blog {
+                background-color: aqua;
+            }
+
+            #footer .parent {
+                padding: 0 40px;
+            }
+        }
+
+        #footer .parent .box {
+            height: auto;
+            width: 230px;
+
+            margin: 10px;
+        }
+
+        #footer .parent .box h1 {
+            font-size: 42px;
+            color: #fff;
+            font-weight: 800;
+        }
+
+        #footer .parent .box h1 span {
+            color: #fdac53;
+        }
+
+        #footer .parent .box h3 {
+            color: #fdac53;
+            font-size: 18px;
+            padding: 15px 0;
+        }
+
+        #footer .parent .box p {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        #footer .parent .box li {
+            color: #fff;
+            font-size: 15px;
+            padding: 2px 0;
+        }
+
+        #footer .parent .box li:hover {
+            text-decoration: underline;
+        }
+
+        #footer .parent .box i {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 50%;
+            transition: 0.3s ease-in-out;
+            background-color: black;
+            border: 1px solid #fdac53;
+            color: #fdac53;
+        }
+
+        #footer .parent .box i:hover {
+            background-color: #fdac53;
+            color: black;
+        }
+
+        #footer .parent .child {
+            height: auto;
+            width: 230px;
+
+        }
+
+        #footer .parent .child h3 {
+            color: #fdac53;
+            font-size: 18px;
+            padding: 15px 0;
+        }
+
+        #footer .parent .child p {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        #footer .parent .location {
+            display: flex;
+            align-items: center;
+        }
+
+        #footer .parent .child .location i {
+            font-size: 18px;
+            color: #fdac53;
+            margin: 10px 0;
+        }
+
+        #footer .parent .location .about p {
+            text-align: left;
+            margin: 0 0 0 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="navbar">
+        <div class="Gnavbar">
+            <div class="logo">
+                <h1><span>D</span>ot<span>C</span>om</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Pricing</li>
+                    <li>Pages</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner">
+        <div class="info">
+            <h3>CREATIVE AGENCY</h3>
+            <h1>Happy Clients &<br>Positive Reviews</h1>
+            <div class="btn">
+                <button>Learn more</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <div class="parent">
+            <div class="image">
+                <img src="./image/about.jpg" alt="">
+            </div>
+            <div class="detail">
+                <span>WHO WE ARE</span>
+                <h1>Most Effective Creative Service Provider For Companies</h1>
+                <p>Eirmod est dolor nonumy sea amet dolore erat sit dolor et dolor vero. Tempor ipsum at justo amet at
+                    ipsum justo. Aiam kasd sea sit dolor duo elitr dolor amet, justo est ipsum amet dolor ut ipsum.
+                    Labore diam et nonumy amet dolores. Volup sit labore dolores erat, magna justo sed lorem kasd ea
+                    dolor. Labore sit clita invidunt, est dolores lorem sed ipsum kasd no amet ipsum.</p>
+                <div class="btn">
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contect">
+        <div class="parent">
+            <div class="details">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="info">
+                    <h2>Our Office</h2>
+                    <p>123 Street, New York, USA</p>
+                </div>
+            </div>
+            <div class="details">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="info">
+                    <h2>Email Us</h2>
+                    <p>mail@domain.com</p>
+                </div>
+            </div>
+            <div class="details">
+                <i class="fa-solid fa-phone"></i>
+                <div class="info">
+                    <h2>Call Us</h2>
+                    <p>+012 345 6789</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="parent">
+            <div class="card">
+                <span>WHAT WE DO</span>
+                <h1>We Offer Creative Services</h1>
+                <p>Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam, est erat lorem. Est magna sea clita diam
+                    tempor elitr</p>
+                <div class="btn">
+                    <button>Discover More</button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="box">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <div class="info">
+                        <h1>Web Design</h1>
+                        <p>Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat
+                        </p>
+                        <h5>Read More>></h5>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-code"></i>
+                    <div class="info">
+                        <h1>Development</h1>
+                        <p>Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr
+                            erat</p>
+                        <h5>Read More>></h5>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <i class="fa-regular fa-envelope-open"></i>
+                    <div class="info">
+                        <h1>Marketing</h1>
+                        <p>Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr
+                            erat</p>
+                        <h5>Read More>></h5>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-arrow-trend-up"> </i>
+                    <div class="info">
+                        <h1>Strategy</h1>
+                        <p>Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr
+                            erat</p>
+                        <h5>Read More>></h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expereince">
+        <div class="parent">
+            <div class="card">
+                <span>WHY CHOOSE US</span>
+                <h1>25 Years Expereince</h1>
+                <p>Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam, est erat lorem</p>
+
+                <li>Lorem ut kasd dolores elitr</li>
+                <li>Jsto dolor lorem ipsum</li>
+                <li>Diama ipsum est dolor</li>
+
+                <div class="btn">
+                    <button>Learn Moress</button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="box">
+                    <h1>25</h1>
+                    <h2>Years Expereince</h2>
+                </div>
+                <div class="box">
+                    <h1>225</h1>
+                    <h2>SKilled Experts</h2>
+
+                </div>
+                <div class="box">
+                    <h1>1050</h1>
+                    <h2>Happy Clients</h2>
+
+                </div>
+                <div class="box">
+                    <h1>2500</h1>
+                    <h2>Complete Projects</h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="employ">
+        <div class="parent">
+            <div class="card">
+                <span>MEET THE TEAM</span>
+                <h1>Meet Experts of Behind Work</h1>
+                <p>Eirmod diam magna sed sea rebum, elitr diam dolor lorem ipsum, ipsum stet magna ea diam vero stet
+                    vero</p>
+                <div class="btn">
+                    <button>Meet All Expert</button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="box">
+                    <img src="./image/team-4.jpg" alt="">
+                    <h3>Paul Watson</h3>
+                    <p>Marketer</p>
+                </div>
+
+                <div class="box">
+                    <img src="./image/team-1.jpg" alt="">
+                    <h3>John Doe</h3>
+                    <p>CEO, Founder</p>
+
+                </div>
+                <div class="box">
+                    <img src="./image/team-2.jpg" alt="">
+                    <h3>Kate Wilson</h3>
+                    <p>Designer</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="subscription">
+        <div class="parent">
+            <div class="price">
+                <div class="amount">
+                    <h2>Basic</h2>
+                    <h1>$49/ Mo</h1>
+                    <hr>
+                    <p>HTML5 & CSS3</p>
+                    <p>Bootstrap 4</p>
+                    <p>Responsive Layout</p>
+                    <p>Compatible With All Browsers</p>
+                    <div class="btn">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="amount">
+                    <h2>Premium</h2>
+                    <h1>$99/ Mo</h1>
+                    <hr>
+                    <p>HTML5 & CSS3</p>
+                    <p>Bootstrap 4</p>
+                    <p>Responsive Layout</p>
+                    <p>Compatible With All Browsers</p>
+                    <div class="btn">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package">
+                <span>OUR PRICING PLAN</span>
+                <h1>We Offer Affordable and Flexible Packages</h1>
+                <p>Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam, est erat lorem. Est magna sea clita diam
+                    tempor elitr</p>
+                <h4>Need A Custom Package?</h4>
+                <div class="btn">
+                    <button>Contact Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clint">
+        <div class="parent">
+            <div class="about">
+                <span>WHAT CLIENTS SAY</span>
+                <h1>Clients Say About Our Services</h1>
+                <p>Lorem ut kasd elitr sed est duo ea ipsum justo diam, est erat lorem clita diam elitr</p>
+                <div class="btn">
+                    <button>Submit Review</button>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="info">
+                    <p>Sed ea amet kasd elitr stet nonumy, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolores
+                        tempor voluptua ipsum sanctus clita</p>
+                </div>
+                <div class="detail">
+                    <img src="./image/testimonial-2.jpg" alt="">
+                    <div class="jo">
+                        <h4>Client Name</h4>
+                        <i>Profession</i>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="info">
+                    <p>Sed ea amet kasd elitr stet nonumy, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolores
+                        tempor voluptua ipsum sanctus clita</p>
+                </div>
+                <div class="detail">
+                    <img src="./image/testimonial-3.jpg" alt="">
+                    <div class="jo">
+                        <h4>Client Name</h4>
+                        <i>Profession</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h3><span>OUR BLOG</span></h3>
+        <h1>Latest From Blog</h1>
+        <div class="parent">
+            <div class="video">
+                <img src="./image/blog-1.jpg" alt="">
+
+                <div class="info">
+                    <img src="./image/user.jpg" alt="">
+                    <h5>John Doe</h5>
+                    <i class="fa-regular fa-bookmark"></i>
+                    <h6>Web Design</h6>
+                </div>
+
+                <h2>Kasd tempor diam sea justo dolor kasd amet dolor labore amet clita est diam dolor</h2>
+            </div>
+            <div class="video">
+                <img src="./image/blog-2.jpg" alt="">
+
+                <div class="info">
+                    <img src="./image/user.jpg" alt="">
+                    <h5>John Doe</h5>
+                    <i class="fa-regular fa-bookmark"></i>
+                    <h6>Web Design</h6>
+                </div>
+
+                <h2>Kasd tempor diam sea justo dolor kasd amet dolor labore amet clita est diam dolor</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="parent">
+            <div class="box">
+                <h1><span>D</span>ot<span>C</span>om</h1>
+                <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Pricing</li>
+                <li>Contant Us</li>
+            </div>
+            <div class="box">
+                <h3>Popular Links</h3>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Pricing</li>
+                <li>Contant Us</li>
+            </div>
+            <div class="child">
+                <h3>Get In Touch</h3>
+                <p>Dolor clita stet nonumy clita diam vero, et et ipsum diam labore</p>
+
+                <div class="location">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <div class="about">
+                        <p>123 Street, New York, USA</p>
+                    </div>
+                </div>
+                <div class="location">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="about">
+                        <p>+012 345 67890</p>
+                    </div>
+                </div>
+                <div class="location">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="about">
+                        <p>mail@domain.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
